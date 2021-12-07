@@ -114,28 +114,3 @@ for u in range(len(files)):
     #sc.columns = Xtrain.columns
 
     sc.to_csv('Relief_feat_relev/'+feat+'_relief_scores.csv', index=False)
-
-
-'''
-for feat in features:
-    sc = pd.DataFrame()
-    for u in range(len(files)):
-        print (f'User: {u}, Feature: {feat}')
-
-        Xtrain, ytrain, Xtest, ytest = prep_data(u, feat, times)
-        X, y = X_y_prep(Xtrain, ytrain)
-        n_o_feat = len(Xtrain.columns)
-        cols = Xtrain.columns
-        X_train_R, X_test_R, y_train_R, y_test_R = split_data(X, y)
-        
-        print("\nInitiating Score Loop!!!")
-        score_list = calc_score(X_train_R, X_test_R, y_train_R, y_test_R)
-        
-        print(score_list)
-        sc1 = pd.DataFrame(score_list).transpose()
-        sc=pd.concat([sc, sc1], axis=0)
-
-    sc.columns = Xtrain.columns
-    
-    sc.to_csv('Relief_feat_relev/'+feat+'_relief_scores.csv', index=False)
-    '''
