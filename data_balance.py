@@ -34,7 +34,7 @@ def get_train_data(genuine, features, rnd, session):
         if features == "fft":
             path_session = gb.glob("feature_extraction/features/FFT5_features/session1/user*.csv")
         elif features == "fft_full":
-            path_session = gb.glob("feature_extraction/features/FFT5_features/session1/user*.csv")
+            path_session = gb.glob("feature_extraction/features/FFT_full_features/session1/user*.csv")
         elif features == "Nickel" :
             path_session = gb.glob("feature_extraction/features/user_nickel/session1/user*.csv")
         elif features == "Kwapisz" :
@@ -49,7 +49,7 @@ def get_train_data(genuine, features, rnd, session):
         if features == "fft":
             path_session = gb.glob("feature_extraction/features/FFT5_features/session2/user*.csv")
         elif features == "fft_full":
-            path_session = gb.glob("feature_extraction/features/FFT5_features/session2/user*.csv")
+            path_session = gb.glob("feature_extraction/features/FFT_full_features/session2/user*.csv")
         elif features == "Nickel" :
             path_session = gb.glob("feature_extraction/features/user_nickel/session2/user*.csv")
         elif features == "Kwapisz" :

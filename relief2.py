@@ -93,7 +93,7 @@ path = 'feature_extraction/features/FFT5_features/session1/'
 files = os.listdir(path)
 
 
-feat = features[1]
+feat = features[3]
 sc = pd.DataFrame()
 for u in range(len(files)):
     print (f'User: {u}, Feature: {feat}')
